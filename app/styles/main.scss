@@ -1,0 +1,22 @@
+body {
+  padding: 20px
+}
+
+.site{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  grid-template-areas:"header header"
+                      "title sidebar"
+                      "main sidebar"
+                      "footer footer";
+  grid-gap:10px; margin:20px; padding:10px; border:solid 2px #000;  
+}
+.site > *{padding:30px; color:#fff; font-size:20px;}
+.mastheader{background:lightgrey; grid-area:header;}
+.page-title{background:lightgrey; grid-area:title;}
+.main-content{
+  background: lightgrey; grid-area:main;
+  min-height:500px;
+}
+.sidebar{background:lightgrey; grid-area:sidebar;}
+.footer{background:lightgrey; grid-area:footer;}
